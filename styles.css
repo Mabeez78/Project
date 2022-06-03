@@ -7,7 +7,7 @@
   }
   
   .navbar {
-    background: #131313;
+    background: #172035;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -87,7 +87,7 @@
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    color: #fff;
+    color: rgb(241, 248, 249);
     transition: all 0.3s ease;
   }
   
@@ -138,7 +138,7 @@
       height: 3px;
       margin: 5px auto;
       transition: all 0.3s ease-in-out;
-      background: #fff;
+      background: rgb(216, 211, 211);
     }
   
     .navbar__item {
@@ -187,5 +187,282 @@
   
     #mobile-menu.is-active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
-    }
+        }
   }
+
+
+    /* Hero Section Css */
+    .main {
+        background-color: #a70606;
+    }
+
+    .main__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-self: center;
+        margin: 0 auto;
+        height: 90vh;
+        background-color: #131313;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0 50px;
+    }
+
+    .main__content h1 {
+        font-size: 4rem;
+        background-color: #ff0844;
+        background-image: linear-gradient(to top, #ff0877 0%, #ffb134 100% );
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;   
+    }
+
+    .main__content h2 {
+        font-size: 4rem;
+        background-color: #ff0844;
+        background-image: linear-gradient(to top, #b70877 0%, #45b134 100% );
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;  
+    }
+
+    .main__content p {
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .main__btn {
+        font-size: 1rem;
+        background-image: linear-gradient(on top #f766 0%, #ff4566 100%);
+        padding: 14px 32px;
+        border: none;
+        border-radius: 4px;
+        color: rgb(160, 12, 12);
+        margin-top: 2rem;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.55s;
+        outline: none;  
+    }
+
+    .main__btn a {
+        position: relative;
+        z-index: 2;
+        color: rgb(44, 105, 174);
+        text-decoration: none;
+    }
+
+    .main__btn:after {
+        position:absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #b369;
+        transition: all 0.55s;
+        border-radius: 4px;
+    }
+
+    .main_btn:hover {
+        color: rgb(32, 2, 69)
+    }
+
+    .main__btn:hover:after {
+        width: 100%;
+    }
+    
+    .main__img--container {
+        text-align: center;
+    }
+    #main__img {
+        height: 80%;
+        width: 80%;
+    }
+
+    /* Mobile Responsive */
+    @media screen and (max-width: 768px) {
+    .main__container {
+      display: grid;
+      grid-template-columns: auto;
+      align-items: center;
+      justify-self: center; 
+      width: 100%;
+      margin: 0 auto;
+      height: 90vh;
+        }
+
+    .main__content {
+      text-align: center;
+      margin-bottom: 4rem;  
+        }
+
+    .main__content h1 {
+      font-size: 2.5rem;
+      margin-top: 2rem;  
+        }
+
+    .main__content h2 {
+        font-size: 3rem;
+        }
+
+    .main__content p {
+        font-size: 1.5rem;
+        margin-top: 1rem;  
+        }
+    }    
+    @media screen and (max-width: 480px) {
+    .main__content h1 {
+        font-size: 2rem;
+        margin-top: 3rem;            
+        }
+    .main__content h2 {
+        font-size: 2rem;
+        }   
+
+    .main__content p {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        }   
+
+    .main__btn {
+        padding: 12px 36px;
+        margin: 2.5rem 0;   
+        }
+    }
+
+    /* Services Section */
+    .services {
+        background: #131313;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .services h1 {
+        background-color: #fd1d1d;
+        background-image: linear-gradient(
+             to right,
+             #fb33 0%, 
+             #ff3434 0%, 
+             #ff43 0%, 
+             #bb38 21%, 
+             #c43567 78%,
+             #c45467, 100%
+             );
+            background-size: 100%; 
+            margin-bottom: 5rem;
+            font-size: 2.5rem;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-text-fill-color: transparent;
+    }
+
+    .services__container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .services__card {
+        margin: 1rem;
+        height: 525px;
+        width: 400px;
+        border-radius: 4px;
+        background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0) 0%, 
+        rgba(17, 17, 17, 0.6)100%), url('/images/pexels-photo-1420440.jpeg');
+        background-size: cover;
+        position: relative;
+        color: #fff;
+    }
+
+    .services__card:nth-child(2) {
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%, 
+    rgba(17, 17, 17, 0.6)100%), url('/images/pexels-lumn-406014.jpg');
+    }
+
+    .services h2 {
+        position: absolute;
+        top: 350px;
+        left: 30px;        
+    }
+
+    .services__card p {
+        position: absolute;
+        top: 400px;
+        left: 30px;
+    }
+
+    .services__card button {
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 4px;
+        background: #f77062;
+        position: absolute;
+        top: 440px;
+        left: 30px;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+
+    .services__card:hover {
+        transform: scale(1.075);
+        transition: 0.2s ease-in;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 960px) {
+     .services {
+         height: 1600px;
+     }   
+
+     .services h1 {
+         font-size: 2rem;
+         margin-top: 12rem;
+         }
+        }
+     @media screen and (max-width: 480px) {
+         .services {
+             height: 1400px;
+         }
+     .services h1 {
+         font-size: 1.2rem;
+        }
+    
+    .services__card {
+        width: 300px;
+    }
+     }
+
+     /* Footer CSS */
+
+    
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
