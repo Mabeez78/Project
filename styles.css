@@ -7,7 +7,7 @@
   }
   
   .navbar {
-    background: #172035;
+    background: #f1f1f3;
     height: 60px;
     display: flex;
     justify-content: center;
@@ -31,7 +31,7 @@
   
   #navbar__logo {
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(to top, #5b5f66 0%, #0e0d0d 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -55,7 +55,7 @@
   }
   
   .navbar__links {
-    color: #fff;
+    color: rgb(12, 12, 12);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -193,7 +193,7 @@
 
     /* Hero Section Css */
     .main {
-        background-color: #a70606;
+        background-color: #0e0d0d;
     }
 
     .main__container {
@@ -203,7 +203,7 @@
         justify-self: center;
         margin: 0 auto;
         height: 90vh;
-        background-color: midnightblue;
+        background-color: rgb(13, 13, 14);
         z-index: 1;
         width: 100%;
         max-width: 1300px;
@@ -236,6 +236,7 @@
         margin-top: 1rem;
         font-size: 2rem;
         font-weight: 700;
+        background-image: linear-gradient(#b33345, #bf33, #fb2315);
     }
 
     .main__btn {
@@ -451,7 +452,7 @@
 
      /* Footer CSS */
      .footer__container {
-         background-color: #45b134;
+         background-color: #172035;
          padding: 5rem 0;
          display: flex;
          flex-direction: column;
