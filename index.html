@@ -3,145 +3,121 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Fencing</title>
+        <title>Oakley's Kitchen</title>
         <link rel="stylesheet" href="/styles.css" />
         <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
-        crossorigin="anonymous"
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+            integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+            crossorigin="anonymous"
         />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1124afc4c6.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet" />
     </head>
-    <body>
+    
+    <style>
+        body {
+            background-image: url("/images/Oakley.jpg");
+        }
+        </style>
+            
         <!-- Navbar Section -->
         <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" id="navbar__logo">Mabeez Fencing</a>
-            <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span> <span class="bar"></span>
-            <span class="bar"></span>
+            <div class="navbar__container">
+                <div class="header__logo"></div>
+                <i class="fa-solid fa-dog"></i>Oakley's Kitchen</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span> <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/index.html" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#flavours" class="navbar__links" id="flavours-page">Flavours</a>
+                    </li>
+
+                    <li class="navbar__btn">
+                        <a href="order.html" class="button" id="ordernow-page">Order Now</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="/index.html" class="navbar__links" id="home-page">Home</a>
-            </li>
-            <li class="navbar__item">
-                <a href="/services.html" class="navbar__links" id="services-page">Services</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#quote" class="navbar__links" id="quote-page"
-                >Get Quote</a
-                >
-            </li>
-            <li class="navbar__btn">
-                <a href="#sign-up" class="button" id="signup">Sign Up</a>
-            </li>
-            </ul>
-        </div>
         </nav>
 
         <!-- Hero Section -->
         <div class="main">
             <div class="main__container">
                 <div class="main__content">
-                    <h1>NEXT GENERATION</h1>
-                    <h2>TECH</h2>
-                    <p>Make the difference.</p>
-                    <button class="main__btn"><a href="/">Get Started</a></button>
+                    <h1>Homemade</h1>
+                    <h2>Dog</h2>
+                    <p>Treats</p>
+                    <button class="main__btn"><a href="customers.html">See Our Customers</a></button>
                 </div>
-                <div class="main__img--container">
-                    <img src="/images/StarDock-Fences-icon.png" alt="pic" id="main__img" />
-                </div>    
+                
+                <div class="second__img--container">
+                    <img src="images/treats.jpg" alt="pic" id="second__img" />
+                </div>
             </div>
         </div>
 
-
-        <!-- Services Section -->
-        <div class="services">
-            <h1>See the craziness</h1>
-            <div class="services__container">
-                <div class="services__card">
-                    <h2>Look for yourself</h2>
-                    <p>Fencing, not with swords</p>
-                    <button>Get Started</button>
-                </div>
-                <div class="services__card">
-                    <h2>NOWEL</h2>
-                    <p>Try it out</p>
-                    <button>Get Started</button>
-                </div>
-
+        <!-- Flavours Section -->
+        <section id="flavours"></section>
+        <div class="flavours">
+            <h1>Check Out Our Flavours</h1>
+            <div class="flavours__container">
+                <div class="flavours__card"></div>
+                <div class="flavours__card"></div>
+                <div class="flavours__card"></div>
+                
             </div>
+        </div>
+
+        <!-- About Us -->
+
+        <section id="about__us"></section>
+        <div class="about__us">
+             <h1>About Us</h1>
+             <p>
+            Canada now has 77 confirmed cases of monkeypox, according to figures supplied Friday by Canada's chief public health officer and Santé
+            Québec, the provincial health ministry. Of the cases identified so far through laboratory testing, 71 are from Quebec, five are from
+            Ontario and one is from Alberta. The figure is more than 15 times higher than the five confirmed cases the Public Health Agency of Canada
+            (PHAC) reported nationwide late last month. While a disproportionate number of cases in this monkeypox outbreak have shown up among gay
+            and bisexual men, Chief Public Health Officer Dr. Theresa Tam told reporters Friday that all groups are potentially susceptible to the
+            virus.
+            </p>
         </div>    
 
         <!-- FOOTER Section -->
         <div class="footer__container">
             <div class="footer__links">
-                <div class="footer__link--wrapper">
-                    <div class="footer__link--items">
-                        <h2>About</h2>
-                        <a href="http://">How it works</a>
-                        <a href="http://">Tests</a>
-                        <a href="http://">Join</a>
-                        <a href="http://">FAQ</a>
-                        <a href="http://">Terms</a>
-                    </div> 
-                  
-                    <div class="footer__link--items">
-                        <h2>About</h2>
-                        <a href="http://">How it works</a>
-                        <a href="http://">Tests</a>
-                        <a href="http://">Join</a>
-                        <a href="http://">FAQ</a>
-                        <a href="http://">Terms</a>
-                    </div>
-                <div class="footer__link--wrapper">
-                    <div class="footer__link--items">
-                        <h2>About</h2>
-                        <a href="http://">How it works</a>
-                        <a href="http://">Tests</a>
-                        <a href="http://">Join</a>
-                        <a href="http://">FAQ</a>
-                        <a href="http://">Terms</a>
-                    </div>  
-                    <div class="footer__link--items">
-                        <h2>About</h2>
-                        <a href="http://">How it works</a>
-                        <a href="http://">Tests</a>
-                        <a href="http://">Join</a>
-                        <a href="http://">FAQ</a>
-                        <a href="http://">Terms</a>
-                    </div>
-                </div>
+                <div class="footer__link--wrapper"></div>
             </div>
             <div class="social__media">
                 <div class="social__media--wrap">
                     <div class="footer__logo">
-                        <a href="/images/undraw_stars_re_6je7.svg" id="footer__logo"><i class="fas
-                            fa-gem"></i>NEXT</a>
+                        <a href="/" id="footer__logo"><i class="fa-solid fa-bone"> </i>Oakely's Kitchen</a>
                     </div>
-                    <p class="website__rights">NEXT 2023. All rights
-                    reserved</p>
+                    <p class="website__rights">All rights reserved</p>
                     <div class="social__icons">
-                        <a href="https://www.facebook.com/" class="social__icons--link" target=_blank>
+                        <a href="https://www.facebook.com/oakleyskitchen/?ref=page_internal" class="social__icons--link" target="_blank">
                             <i class="fab fa-facebook"></i>
-                        </a>    
-                        <a href="https://www.instagram.com/?hl=en" class="social__icons--link" target=_blank>
+                        </a>
+                        <a href="https://www.instagram.com/?hl=en" class="social__icons--link" target="_blank">
                             <i class="fab fa-instagram"></i>
-                        </a>    
-                        <a href="https://twitter.com/?lang=en" class="social__icons--link" target=_blank>
+                        </a>
+                        <a href="https://twitter.com/?lang=en" class="social__icons--link" target="_blank">
                             <i class="fab fa-twitter"></i>
-                        </a>    
-                        <a href="https://www.youtube.com" class="social__icons--link" target=_blank>
+                        </a>
+                        <a href="https://www.youtube.com" class="social__icons--link" target="_blank">
                             <i class="fab fa-youtube"></i>
-                        </a>    
+                        </a>
                     </div>
                 </div>
-            </div>    
-        </div>    
+            </div>
+        </div>
         <script src="/app.js"></script>
     </body>
 </html>
