@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Kumbh Sans", sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     scroll-behavior: smooth;
 }
 
@@ -12,8 +12,8 @@
 }
 
 .logo__img {
-    height: 30%;
-    width: 30%;
+    height: 60%;
+    width: 60%;
 }
 
 .navbar {
@@ -31,7 +31,7 @@
 .navbar__container {
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    height: 37px;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -102,8 +102,8 @@
 }
 
 .navbar__links:hover {
-    color: #9518fc;
-    transition: all 0.9s ease;
+    color: #e80b0b;
+    transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 960px) {
@@ -130,7 +130,7 @@
     }
 
     .navbar__menu.active {
-        background: #131313;
+        background: #f2f0f0;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -221,7 +221,7 @@
 
 .main__content h1 {
     font-size: 8rem;
-    background-color: #fffcfd;
+    background-color: #070707;
     /*background-image: linear-gradient(to top, #45b134 0, #b70877 100%);*/
     background-size: 100%;
     -webkit-background-clip: text;
@@ -231,8 +231,8 @@
 }
 
 .main__content h2 {
-    font-size: 6rem;
-    background-color: #f7f6f6;
+    font-size: 8rem;
+    background-color: #020202;
    /* background-image: linear-gradient(to top, #b70877 0%, #45b134 100%);*/
     background-size: 100%;
     -webkit-background-clip: text;
@@ -243,8 +243,8 @@
 
 .main__content p {
     margin-top: 1rem;
-    font-size: 4rem;
-    background-color: white;
+    font-size: 8rem;
+    background-color: rgb(5, 5, 5);
     font-weight: 700;
     /*background-image: linear-gradient(to top, #45b134 0, #b70877 100%);*/
     background-size: 100%;
@@ -255,12 +255,12 @@
 }
 
 .main__btn {
-    font-size: 1rem;
+    font-size: 2rem;
     background-image: linear-gradient(on top #f766 0%, #ff4566 100%);
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
-    color: rgb(160, 12, 12);
+    color: rgb(118, 30, 30);
     margin-top: 2rem;
     cursor: pointer;
     position: relative;
@@ -366,7 +366,7 @@
 
 /* Services Section */
 .flavours {
-    background: #131313;
+    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,13 +375,13 @@
 
 .flavours h1 {
     background-color: #fd1d1d;
-    background-image: linear-gradient(to right, #fb33 0%, #ff3434 0%, #ff43 0%, #bb38 21%, #c43567 78%, #c45467, 100%);
+    background-image: linear-gradient(to right, #fb33 10%, #ff3434 10%, #ff43 80%);
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
     -webkit-background-clip: text;
     -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: black;
     -moz-text-fill-color: transparent;
 }
 
@@ -472,16 +472,20 @@
 /* About Us */
 
 .about__us h1 {
-    background-color: white;
-    text-align: left;
-    display: flex;
-    color: #f77062;
+    font-size: 3rem;
+    background-color: #fffcfd;
+    background-image: linear-gradient(to top, #eaf0ea 0, #015c16 100%);
+    background-size: 100%;
+    -webkit-background-clip:content-box;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: black;
+    -moz-text-fill-color: transparent;
 }
 
 .about__us p {
-    color: white;
+    color: rgb(8, 8, 8);
     font-size: 1rem;
-    background-color: #172035;
+    background-image: linear-gradient(white, green);
 
 }
 
