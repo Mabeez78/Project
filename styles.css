@@ -2,13 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     scroll-behavior: smooth;
 }
 
 .logo__img--container {
     right: 40%;
-    
 }
 
 .logo__img {
@@ -51,7 +50,7 @@
     align-items: left;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .navbar__menu {
@@ -233,7 +232,7 @@
 .main__content h2 {
     font-size: 8rem;
     background-color: #020202;
-   /* background-image: linear-gradient(to top, #b70877 0%, #45b134 100%);*/
+    /* background-image: linear-gradient(to top, #b70877 0%, #45b134 100%);*/
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -283,7 +282,7 @@
     width: 0;
     height: 100%;
     background: #b369;
-    transition: all 0.55s;
+    transition: all 0.4s;
     border-radius: 4px;
 }
 
@@ -476,7 +475,7 @@
     background-color: #fffcfd;
     background-image: linear-gradient(to top, #eaf0ea 0, #015c16 100%);
     background-size: 100%;
-    -webkit-background-clip:content-box;
+    -webkit-background-clip: content-box;
     -moz-background-clip: text;
     -webkit-text-fill-color: black;
     -moz-text-fill-color: transparent;
@@ -486,13 +485,12 @@
     color: rgb(8, 8, 8);
     font-size: 1rem;
     background-image: linear-gradient(white, green);
-
 }
 
 /* Footer CSS */
 .footer__container {
     background-color: #172035;
-    padding: 5rem 0;
+    padding: 0.5rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
