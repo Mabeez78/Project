@@ -40,7 +40,9 @@
                     <li class="navbar__item">
                         <a href="#flavours" class="navbar__links" id="flavours-page">Flavours</a>
                     </li>
-
+                    <li class="navbar__item">
+                        <a href="#customers" class="navbar__links" id="customers-page">Customers</a>
+                    </li>
                     <li class="navbar__btn">
                         <a href="order.html" class="button" id="ordernow-page">Order Now</a>
                     </li>
@@ -55,24 +57,138 @@
                     <h1>Homemade</h1>
                     <h2>Dog</h2>
                     <p>Treats</p>
-                    <button class="main__btn"><a href="customers.html">See Our Customers</a></button>
                 </div>
             </div>
         </div>
 
         <!-- Flavours Section -->
-        <section id="flavours"></section>
-        <div class="flavours">
-            <h1>Check Out Our Flavours</h1>
-            <div class="flavours__container">
-                <div class="flavours__card"></div>
-                <div class="flavours__card"></div>
-                <div class="flavours__card"></div>
-                
+        <section id="flavours">
+            <div class="flavours">
+                    <h1>Check Out Our Flavours</h1>
+                <div class="flavours__container">
+                    <div class="flavours__card"></div>
+                    <div class="flavours__card"></div>
+                    <div class="flavours__card"></div>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- About Us -->
+        <!-- Customers Section -->
+        <section id="customers">
+            <div class="flavours">
+                <label style="font-size: 4rem;" label class="glow">Our Customers</label>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/blossom.png" style="height: 600px;" >
+                    <div class="text" style="font-size: 2rem;"><b>Blossom</b></div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/Bo.jpg" style="height: 600px;">
+                    <div class="text" style="font-size: 2rem;"><b>Bo</b></div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/bruno.jpg" style="height: 600px;">
+                    <div class="text"style="font-size: 2rem;"><b>Bruno</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/chloe.jpg" style="height: 600px;">
+                    <div class="text"style="font-size: 2rem;"><b>Chloe</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/Daisy.jpg" style="height: 600px;">
+                    <div class="text"style="font-size: 2rem;"><b>Daisy</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/ivy.jpg" style="height: 600px;">
+                    <div class="text"style="font-size: 2rem;"><b>Ivy</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/nova.jpg" style="height: 600px;">
+                    <div class="text"style="font-size: 2rem;"><b>Nova</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/oakley3.jpg" style="height: 600px;">
+                    <div class="text"style="font-size: 2rem;"><b>Oakley</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/odin.jpg" style="height: 600px;">
+                    <div class="text"style="font-size: 2rem;"><b>Odin</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/sasha.jpg" style="height: 600px;">
+                    <div class="text"style="font-size: 2rem;"><b>Sasha</b></div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="/images/tucker.jpg" style="height: 600px;">
+                    <div class="text"style="font-size: 2rem;"><b>Tucker</b></div>
+                </div>           
+            </div>
+        </section>
+                
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                  <span class="dot" onclick="currentSlide(5)"></span> 
+                  <span class="dot" onclick="currentSlide(6)"></span>
+                  <span class="dot" onclick="currentSlide(7)"></span>
+                  <span class="dot" onclick="currentSlide(8)"></span> 
+                  <span class="dot" onclick="currentSlide(9)"></span>
+                  <span class="dot" onclick="currentSlide(10)"></span>
+                  <span class="dot" onclick="currentSlide(11)"></span>
+                </div>
+                
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2500); // Change image every  seconds
+                    }
+                    </script>
+                    
+
+        </section>
+
+
+         <!-- About Us  -->
 
         <section id="about__us"></section>
         <div class="about__us">

@@ -31,9 +31,10 @@
             
             <style>
             body {
-            background-image: url("/images/Oakley.jpg");
+            background-image: url("/images/Oakley.jpg"); ;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size:cover; contain: content;
+            position: sticky;
              }
              
 
@@ -65,9 +66,9 @@
                 <form action="https://getform.io/f/67a3277a-1478-4d1d-9e2d-c3e5933aa997" method="POST" enctype="multipart/form-data"  
                     target="_blank" id="wpform">
                     
-                    <p style="font-size:2rem"><b>Name:</b></p><input type="" style="font-size: 2rem;" name="name"><br><br>
-                    <p style=font-size:2rem><b>Email:</b></p><input type="" style="font-size: 2rem;" name="email"><br><br>
-                    <p style=font-size:2rem><b>Phone:</b></p><input type="" style="font-size: 2rem;" name="phone"><br><br>
+                    <p style="font-size:2rem"><b>* Name:</b></p><input required type="name" style="font-size: 2rem;" name="name"><br><br>
+                    <p style=font-size:2rem><b>* Email:</b></p><input required type="email" style="font-size: 2rem;" name="email"><br><br>
+                    <p style=font-size:2rem><b>* Phone:</b></p><input required type="phone" style="font-size: 2rem;" name="phone"><br><br>
                             
                     <img src="/images/bandc.jpg" height="200" width="250"><p style="font-size: 2rem;">Quantity:</p>  <input onblur="findTotal()" type="text" name="bacon" id="qty1" class="qty" style="font-size: 1.15rem;"><br><br>
                     <img src="/images/bandpb.jpg" height="200" width="250"><p style="font-size: 2rem;">Quantity:</p>  <input onblur="findTotal()" type="text" name="banana" id="qty2" class="qty"style="font-size: 1.15rem;"><br><br>
