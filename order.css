@@ -104,7 +104,7 @@
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     scroll-behavior: smooth;
 }
-
+/* Logo */
 .logo__img--container {
     right: 40%;
 }
@@ -113,7 +113,7 @@
     height: 60%;
     width: 60%;
 }
-
+/* Navbar */
 .navbar {
     background-image: linear-gradient(white, green);
     height: 80px;
@@ -273,6 +273,43 @@
         margin: 0;
     }
 }
+/* Submit Button */
+.submit__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    color: rgb(241, 248, 249);
+    transition: all 0.3s ease;
+}
+
+.submit__btn a {
+    position: relative;
+    z-index: 2;
+    color: rgb(44, 105, 174);
+    text-decoration: none;
+}
+
+.submit__btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.4s;
+    border-radius: 4px;
+}
 
 /* Footer CSS */
 .footer__container {
@@ -404,48 +441,4 @@
         padding: 10px;
         width: 100%;
     }
-}
-
-.submit__btn {
-    font-size: 2rem;
-    background-image: linear-gradient(on top #f766 0%, #ff4566 100%);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: rgb(118, 30, 30);
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.55s;
-    outline: none;
-}
-
-.submit__btn a {
-    position: relative;
-    z-index: 2;
-    color: rgb(44, 105, 174);
-    text-decoration: none;
-}
-
-.submit__btn:after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    transition: all 0.4s;
-    border-radius: 4px;
-}
-.submit_btn:hover {
-    color: rgb(8, 0, 18);
-}
-
-.submit__btn:hover:after {
-    width: 100%;
-}
-
-.order {
-    font-size: 1.25rem;
 }
