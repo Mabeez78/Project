@@ -1,3 +1,17 @@
+img {
+    width: 100%;
+    border-radius: 20%;
+}
+
+body {
+    background-image: url(/images/Oakley.jpg), repeating-radial-gradient(white 30%, green 70%);
+    background-color: #cccccc;
+    position: sticky;
+    background-position: center;
+    background-repeat: no-repeat;
+    contain: size;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -737,7 +751,7 @@ img {
 /* Glow Effect */
 
 body {
-    background-color: black;
+    background-color: transparent;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
