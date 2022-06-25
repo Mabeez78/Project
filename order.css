@@ -508,3 +508,26 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(1, 4, 157);
 }
+
+total {
+    margin: 3em;
+    padding-left: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.dollar__sign {
+    position: relative;
+    font-size: 2rem;
+}
+.dollar__sign input {
+    padding-left: 55px;
+    font-size: 2rem;
+    width: 135px;
+}
+.dollar__sign:before {
+    position: absolute;
+    top: 40px;
+    content: "$";
+    left: 30px;
+}
