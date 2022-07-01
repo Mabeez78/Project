@@ -531,3 +531,8 @@ total {
     content: "$";
     left: 30px;
 }
+
+.qty {
+    width: 135px;
+    text-align: center;
+}

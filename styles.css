@@ -4,12 +4,15 @@ img {
 }
 
 body {
-    background-image: url(/images/Oakley.jpg), repeating-radial-gradient(white 30%, green 70%);
+    background-image: url(/images/Oakley.jpg);
     background-color: #cccccc;
+    width: 100%;
     position: sticky;
     background-position: center;
     background-repeat: no-repeat;
     contain: size;
+    background-color: transparent;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 * {
@@ -328,16 +331,6 @@ body {
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
-    .main__container {
-        display: grid;
-        grid-template-columns: auto;
-        align-items: center;
-        justify-self: center;
-        width: 100%;
-        margin: 0 auto;
-        height: 90vh;
-    }
-
     .main__content {
         text-align: center;
         margin-bottom: 4rem;
@@ -389,15 +382,13 @@ body {
 }
 
 .flavours h1 {
-    background-color: #fd1d1d;
-    background-image: linear-gradient(to right, #fb33 10%, #ff3434 10%, #ff43 80%);
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
+    background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    font-family: "Chicle", cursive;
     -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: black;
-    -moz-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-top: 55px;
+    text-shadow: 2px 2px 2px grey;
+    font-size: 60px;
 }
 
 .flavours__container {
@@ -642,10 +633,7 @@ body {
 * {
     box-sizing: border-box;
 }
-body {
-    font-family: Verdana, sans-serif;
-    margin: 0;
-}
+
 .mySlides {
     display: none;
 }
@@ -754,8 +742,6 @@ img {
 /* Glow Effect */
 
 body {
-    background-color: transparent;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .glow {
@@ -777,10 +763,11 @@ body {
 
 .rainbow-text {
     background-image: repeating-linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
-
+    font-family: "Chicle", cursive;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: -555px;
+    text-shadow: 5px 5px 3px;
 }
 
 .jump {
