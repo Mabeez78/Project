@@ -408,18 +408,6 @@ body {
     color: #fff;
 }
 
-.flavours__card:nth-child(2) {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url("images/bandpb.jpg");
-}
-
-.flavours__card:nth-child(3) {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url("images/bandc.jpg");
-}
-
-.flavours__card:nth-child(4) {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 17, 17, 0.6) 100%), url("images/treats2.jpg");
-}
-
 .flavours h2 {
     position: absolute;
     top: 350px;
@@ -434,24 +422,9 @@ body {
     padding: 0;
 }
 
-.flavours__card button {
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: #f77062;
-    position: absolute;
-    top: 440px;
-    left: 30px;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
 .flavours__card:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
